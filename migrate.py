@@ -35,7 +35,7 @@ def main():
         final_path = '\\'.join(reversed_path_sep)
         # avoids duplicate operations and errors raised
         try:
-            os.makedirs(os.path.join(dst_folder,final_path))
+            os.makedirs(os.path.join(dst_folder,final_path), exist_ok=True)
         except Exception as e:
             print(e)
 
