@@ -8,7 +8,7 @@ def main():
     # join custom drives with unc paths
     dst_temp = dst_folder.split("\\")
     if "S:" == dst_temp[0]:
-        dst_temp[0] = "\\gothamtg.net\shares"
+        dst_temp[0] = "\\cofs01\\shares"
     elif "T:" == dst_temp[0]:
         dst_temp[0] = "\\cofs01.gothamtg.net\\templates"
     dst_folder = "\\".join(dst_temp)
