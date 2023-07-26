@@ -36,9 +36,8 @@ def main():
         # avoids duplicate operations and errors raised
         try:
             os.makedirs(os.path.join(dst_folder,final_path))
-        except:
-            print("already made " + os.path.join(dst_folder,final_path))
-
+        except Exception as e:
+            print(e)
 
 if __name__ == "__main__":
      main()
