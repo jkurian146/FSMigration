@@ -23,7 +23,7 @@ def main():
     # build path recursivley using key,value pairs
     # Path is built out when the constructed path key 
     # has no cooresponding value (no parent directory)
-    for key in data_dict.items():
+    for key,val in data_dict.items():
         endPoint = key
         rel_path = ""
         while(endPoint != None):
